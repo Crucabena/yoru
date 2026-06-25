@@ -1,0 +1,30 @@
+[package]
+name = "yoru"
+version = "0.1.1"
+edition = "2021"
+authors = ["yoru contributors"]
+description = "A modern AUR helper for Arch Linux"
+license = "MIT"
+repository = "https://github.com/crucabena/yoru"
+
+[[bin]]
+name = "yoru"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+reqwest = { version = "0.12", features = ["json"] }
+serde = { version = "1", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
+anyhow = "1"
+colored = "3"
+dirs = "6"
+indicatif = "0.18"
+console = "0.16"
+which = "8"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
