@@ -1,0 +1,17 @@
+pkgbase = yoru
+	pkgdesc = A modern AUR helper for Arch Linux
+	pkgver = 0.1.1
+	pkgrel = 1
+	url = https://github.com/crucabena/yoru
+	arch = x86_64
+	arch = aarch64
+	license = MIT
+	makedepends = rust
+	makedepends = cargo
+	depends = pacman
+	depends = git
+	depends = sudo
+	source = yoru-0.1.1.tar.gz::https://github.com/crucabena/yoru/archive/v0.1.1.tar.gz
+	sha256sums = e5399295277a53222f9b1b7435ccd547665611d832c7de3e93a2c73872f34ef3
+
+pkgname = yoru

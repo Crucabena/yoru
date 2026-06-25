@@ -8,7 +8,7 @@ license=('MIT')
 depends=('pacman' 'git' 'sudo')
 makedepends=('rust' 'cargo')
 source=("$pkgname-$pkgver.tar.gz::$url/archive/v$pkgver.tar.gz")
-sha256sums=('SKIP')
+sha256sums=('e5399295277a53222f9b1b7435ccd547665611d832c7de3e93a2c73872f34ef3')
 
 build() {
     cd "$pkgname-$pkgver"
